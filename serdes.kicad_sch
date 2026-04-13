@@ -13207,23 +13207,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 31.75) (xy 146.05 31.75)
+			(xy 130.81 31.75) (xy 171.45 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "04a3592d-229e-4f3b-8bca-483b85095e8b")
-	)
-	(wire
-		(pts
-			(xy 151.13 31.75) (xy 171.45 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "085dc5dd-1cab-458f-9403-5a0b5c08fb85")
 	)
 	(wire
 		(pts
@@ -13307,7 +13297,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 29.21) (xy 146.05 29.21)
+			(xy 116.84 29.21) (xy 171.45 29.21)
 		)
 		(stroke
 			(width 0)
@@ -13804,16 +13794,6 @@
 			(type default)
 		)
 		(uuid "c0fe5015-eb4e-4e5b-baac-3281ea89f975")
-	)
-	(wire
-		(pts
-			(xy 151.13 29.21) (xy 171.45 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c159a778-9010-41dc-b80c-41db0e47b8cf")
 	)
 	(wire
 		(pts
@@ -14331,72 +14311,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 148.59 29.21 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1354c7d6-6e04-4dca-b21c-de60e252c8d4")
-		(property "Reference" "C134"
-			(at 143.51 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 153.67 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 148.59 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8d6ccd8c-c03f-47b7-8b61-b360916f4b6d")
-		)
-		(pin "2"
-			(uuid "3c972186-57bc-4c50-a392-c3565e2097d4")
-		)
-		(instances
-			(project "gatemate-plm"
-				(path "/9e5cbfd6-8186-4817-919e-acd256336bc8/1df60d8c-4085-48d0-b19e-6bdaeb1198b0"
-					(reference "C134")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 27.94 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14458,72 +14372,6 @@
 			(project "gatemate-plm"
 				(path "/9e5cbfd6-8186-4817-919e-acd256336bc8/1df60d8c-4085-48d0-b19e-6bdaeb1198b0"
 					(reference "C126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 148.59 31.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1425c47e-2c65-480e-9613-a420b5c1bad3")
-		(property "Reference" "C135"
-			(at 143.51 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 153.67 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 148.59 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "353cc92b-4482-4f3f-b67f-dd53b9cd84c0")
-		)
-		(pin "2"
-			(uuid "80650974-a93a-4b21-a98e-e3d6066f2ff8")
-		)
-		(instances
-			(project "gatemate-plm"
-				(path "/9e5cbfd6-8186-4817-919e-acd256336bc8/1df60d8c-4085-48d0-b19e-6bdaeb1198b0"
-					(reference "C135")
 					(unit 1)
 				)
 			)
