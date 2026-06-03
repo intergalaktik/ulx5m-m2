@@ -20183,9 +20183,9 @@
 		(at 41.91 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "385d1721-d9db-45cb-ac5e-fa7f9fdc1321")
 		(property "Reference" "R148"
 			(at 46.228 104.14 90)
@@ -20724,9 +20724,9 @@
 		(at 41.91 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "5ff130bf-8b9b-47fe-9040-df7b3b10bc8e")
 		(property "Reference" "R149"
 			(at 46.228 106.68 90)
@@ -22782,9 +22782,9 @@
 		(at 256.54 127 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0035bb0-5731-4e37-a513-ca52eedcb84f")
 		(property "Reference" "J4"
@@ -22829,6 +22829,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" ""
+			(at 256.54 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -23273,9 +23282,9 @@
 		(at 41.91 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "c833a7d5-316e-4876-9547-5aeeb9b71c51")
 		(property "Reference" "R147"
 			(at 46.228 101.854 90)
@@ -24221,9 +24230,9 @@
 		(at 41.91 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "f73728d4-f8e5-4072-a08e-b0dbfb99597b")
 		(property "Reference" "R150"
 			(at 46.228 109.474 90)
