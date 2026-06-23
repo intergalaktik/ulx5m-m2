@@ -7,31 +7,24 @@
 # ULX5M-GS
 GateMate FPGA on M2 card
 
-![TOP](/pic/ulx5m-m2-top.png)
-![BOTTOM](/pic/ulx5m-m2-bottom.png)
+![TOP](/pic/ulx5m-m2-top.jpg)
+![BOTTOM](/pic/ulx5m-m2-bottom.jpg)
 
 ## Blinky
 
-[![Blinky video](/pic/ulx5m-m2-blinky.png)](/pic/ulx5m-m2-blinky.mov)
+[![Blinky video](/pic/ulx5m-m2-blinky.png)](/pic/ulx5m-m2-blinky.mp4)
 
 #### ULX5M-M2 V001
 
--[x] JTAG 
-
--[x] FLASH
-
--[x] LEDs
-
--[x] Blinkey
-
--[x] USB - device shows up
-
--[] BTNS
-
--[] SDRAM
-
--[] SerDes
-
+- [x] JTAG 
+- [x] FLASH
+- [x] LEDs
+- [x] Blinkey
+- [x] USB - device shows up
+- [] BTNS
+- [] SDRAM
+- [] SerDes
+- [] PCIe
 
 ## References
 
