@@ -1,7 +1,5 @@
 # Work in progress!!! 
 
-# Only tested thing on this board is blinky - please wait!
-
 # Please check the list of confirmed working
 
 # ULX5M-GS
@@ -23,7 +21,19 @@ GateMate FPGA on M2 card
 - [x] USB - device shows up
 - [] BTNS
 - [] SDRAM
-- [] SerDes
+- [x] SerDes with connection to ULX5M-GS - low speed 1.25Gbit/s SerDes transfer.
+- [] PCIe
+
+#### ULX5M-M2 V002 - ready for order
+
+- [] JTAG 
+- [] FLASH
+- [] LEDs
+- [] Blinkey
+- [] USB - device shows up
+- [] BTNS
+- [] SDRAM
+- [] SerDes with connection to ULX5M-GS I am getting low speed SerDes transfer.
 - [] PCIe
 
 ## References
@@ -48,11 +58,8 @@ This project was done in collaboration with Chili Chips*Ba team.
 They have put enormes effort in making all cores to work on GateMate even before we have our own board!
 Thanks to them now we have big set of cores that can be used to check and improve opensource toolchain!
 They are proven to be reliable partners that solves problem quickly and on side works on educating younger generations!
-
 Also big thanks goes to YosysHQ as they are doing miracles with open source tooling, and we now finaly have one that works for GateMate!
-
 From YosysHQ special thanks to Micko and Lofty that are helping in real time on Discord!
-
 Special thanks to Patrick from Cologne, as without him and rest of Cologne team we would not be able to get this project done.
 
 ## Work on this board is financed by NLnet foundation
