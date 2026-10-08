@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.2,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -70,27 +88,31 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|147027000|119543398|0ed7554c-7af3-4242-b95f-798323c1edc7|e2d6b227-8f8d-46e4-a777-9d7ce30d1eb7",
+          "clearance|65880001|103218399|0ed7554c-7af3-4242-b95f-798323c1edc7|e2d6b227-8f8d-46e4-a777-9d7ce30d1eb7",
           ""
         ],
         [
-          "clearance|147027000|120196600|aaf7e845-fa1e-46c0-b0dc-6db1c7cacc8d|e2d6b227-8f8d-46e4-a777-9d7ce30d1eb7",
+          "clearance|65880001|103871601|aaf7e845-fa1e-46c0-b0dc-6db1c7cacc8d|e2d6b227-8f8d-46e4-a777-9d7ce30d1eb7",
           ""
         ],
         [
-          "clearance|147027000|120646599|e53484a5-6883-493f-9f18-0b8a3a935c6b|e2d6b227-8f8d-46e4-a777-9d7ce30d1eb7",
+          "clearance|67976001|103218399|617c8209-11ec-4ad4-906f-ad434bf0bf2f|71d58ed1-e579-4a14-a5db-31d4f7039ee1",
           ""
         ],
         [
-          "clearance|149123000|119543398|617c8209-11ec-4ad4-906f-ad434bf0bf2f|71d58ed1-e579-4a14-a5db-31d4f7039ee1",
+          "clearance|67976001|104321600|25c2254a-86d8-4f11-a451-c4926aa7829a|71d58ed1-e579-4a14-a5db-31d4f7039ee1",
           ""
         ],
         [
-          "clearance|149123000|119993400|8b8d229f-dc74-4b2b-9653-3c533aa28bee|71d58ed1-e579-4a14-a5db-31d4f7039ee1",
+          "courtyards_overlap|53585240|88685238|17635f60-d9a9-4849-8602-c66e7e78be78|fa198edf-ee4a-424e-9706-adc8ed5672b4",
           ""
         ],
         [
-          "clearance|149123000|120646599|25c2254a-86d8-4f11-a451-c4926aa7829a|71d58ed1-e579-4a14-a5db-31d4f7039ee1",
+          "shorting_items|65880001|104321600|e2d6b227-8f8d-46e4-a777-9d7ce30d1eb7|e53484a5-6883-493f-9f18-0b8a3a935c6b",
+          ""
+        ],
+        [
+          "shorting_items|67976001|103668401|71d58ed1-e579-4a14-a5db-31d4f7039ee1|8b8d229f-dc74-4b2b-9653-3c533aa28bee",
           ""
         ]
       ],
@@ -112,6 +134,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -130,6 +153,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -149,9 +173,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -283,17 +310,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": "${project_version}"
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -484,11 +522,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -511,8 +552,10 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -542,6 +585,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.13,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -559,6 +603,7 @@
         "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -576,6 +621,7 @@
         "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.13,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -593,6 +639,7 @@
         "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.13,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -610,6 +657,7 @@
         "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.147,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -627,6 +675,7 @@
         "priority": 1,
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -644,6 +693,7 @@
         "priority": 3,
         "schematic_color": "rgb(0, 255, 255)",
         "track_width": 0.13,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -661,6 +711,7 @@
         "priority": 5,
         "schematic_color": "rgb(0, 132, 0)",
         "track_width": 0.13,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -678,6 +729,7 @@
         "priority": 6,
         "schematic_color": "rgb(0, 0, 132)",
         "track_width": 0.13,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -695,13 +747,14 @@
         "priority": 11,
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.13,
+        "clearance": 0.12,
         "diff_pair_gap": 0.253,
         "diff_pair_width": 0.147,
         "line_style": 0,
@@ -712,6 +765,7 @@
         "priority": 0,
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 0.147,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -729,6 +783,7 @@
         "priority": 12,
         "schematic_color": "rgb(72, 72, 72)",
         "track_width": 0.3,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -746,6 +801,7 @@
         "priority": 4,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.3,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -763,13 +819,14 @@
         "priority": 2,
         "schematic_color": "rgb(0, 255, 0)",
         "track_width": 0.147,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -1505,7 +1562,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../production/v4/",
+      "plot": "stencil_bottom/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -1516,6 +1573,10 @@
   },
   "schematic": {
     "annotate_start_num": 100,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -1803,6 +1864,38 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {
+      "DDMI0": [
+        "DDMI0_TX0_P",
+        "DDMI0_TX0_N",
+        "DDMI0_TX1_P",
+        "DDMI0_TX1_N",
+        "DDMI0_TX2_P",
+        "DDMI0_TX2_N",
+        "DDMI0_CLK_P",
+        "DDMI0_CLK_N",
+        "DDMI0_SDA",
+        "DDMI0_SCL"
+      ],
+      "DDMI1": [
+        "DDMI1_TX0_P",
+        "DDMI1_TX0_N",
+        "DDMI1_TX1_P",
+        "DDMI1_TX1_N",
+        "DDMI1_TX2_P",
+        "DDMI1_TX2_N",
+        "DDMI1_CLK_P",
+        "DDMI1_CLK_N"
+      ],
+      "PCIe": [
+        "PCIe_TX_P",
+        "PCIe_TX_N",
+        "PCIe_RX_P",
+        "PCIe_RX_N",
+        "PCIe_CLK_P",
+        "PCIe_CLK_N"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -1810,6 +1903,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -1841,6 +1935,7 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "../doc/",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -1849,12 +1944,29 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "ulx5m-m2.kicad_sch",
+        "name": "ulx5m-m2",
+        "uuid": "9e5cbfd6-8186-4817-919e-acd256336bc8"
+      }
+    ],
+    "used_designators": "#PWR72,#PWR117,J6,J101-102,FID101-106,R66",
+    "variants": []
   },
   "sheets": [
     [
       "9e5cbfd6-8186-4817-919e-acd256336bc8",
-      "Root"
+      "ulx5m-m2"
+    ],
+    [
+      "7e2ec1e0-e32b-4531-8531-d387c18838b0",
+      "M.2 M Key"
+    ],
+    [
+      "90d8a0fe-6e9e-4d1d-ad54-87aefda3ab86",
+      "PCIe Couple Caps4"
     ],
     [
       "3a2aa01e-90a0-4f5c-bc35-5016c4c82a42",
@@ -1885,14 +1997,6 @@
       "serdes"
     ],
     [
-      "7e2ec1e0-e32b-4531-8531-d387c18838b0",
-      "M.2 M Key"
-    ],
-    [
-      "90d8a0fe-6e9e-4d1d-ad54-87aefda3ab86",
-      "PCIe Couple Caps4"
-    ],
-    [
       "5d0595b3-944b-441f-b22b-db89ec1a22e6",
       "PCIe Couple Caps3"
     ],
@@ -1911,5 +2015,11 @@
     "project_name": "ULX5M-M2",
     "project_version": "v001",
     "project_year": "2026"
+  },
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
   }
 }
