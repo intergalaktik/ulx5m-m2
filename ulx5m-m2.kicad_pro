@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.6,
-          "height": 2.1,
-          "width": 1.0
+          "drill": 0.0,
+          "height": 0.4,
+          "width": 0.37
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -210,7 +210,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.07,
+        "min_clearance": 0.1,
         "min_connection": 0.127,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
@@ -223,7 +223,7 @@
         "min_text_height": 0.5,
         "min_text_thickness": 0.1,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.127,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.075,
         "min_via_diameter": 0.35,
         "solder_mask_clearance": 0.0,
@@ -277,6 +277,7 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
         0.127,
         0.13,
         0.147,
@@ -317,6 +318,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.2
         },
         {
           "diameter": 0.45,
@@ -1976,7 +1981,7 @@
         "uuid": "9e5cbfd6-8186-4817-919e-acd256336bc8"
       }
     ],
-    "used_designators": "#PWR72,#PWR93,#PWR117,J6,J101-102,FID101-106,R66",
+    "used_designators": "R66,FID101-106,J6,J101-102,#PWR72,#PWR93,#PWR117",
     "variants": []
   },
   "sheets": [
