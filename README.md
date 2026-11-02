@@ -4,7 +4,7 @@
 GateMate FPGA on M2 card
 
 ![TOP](/pic/ulx5m-m2-v2-top.jpg)
-![BOTTOM](/pic/ulx5m-m2-v2-bottom.jpg)
+![BOTTOM](/pic/ulx5m-m2_v2-bottom.jpg)
 
 ## Blinky
 
