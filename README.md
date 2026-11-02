@@ -1,16 +1,25 @@
 # Work in progress!!! 
 
-# Please check the list of confirmed working
-
-# ULX5M-GS
+# ULX5M-M2
 GateMate FPGA on M2 card
 
-![TOP](/pic/ulx5m-m2-top.jpg)
-![BOTTOM](/pic/ulx5m-m2-bottom.jpg)
+![TOP](/pic/ulx5m-m2-v2-top.jpg)
+![BOTTOM](/pic/ulx5m-m2-v2-bottom.jpg)
 
 ## Blinky
 
 [![Blinky video](/pic/ulx5m-m2-blinky.png)](/pic/ulx5m-m2-blinky.mp4)
+
+## SerDes test 
+
+For initial test of V0.1 SerDes We have used messy setup.
+On CM5 BaseBoard we have our ULX5M-GS board, and on M2 HAT we have M2 v0.1 board
+PCIe lines are connected with small cable.
+We have successfull data transfer and 1.25Gbit/s is without errors
+2.5G is with some filter adjustment (v0.2) in good shape - almost without errors so usable!
+We did not manage to get higher that 2.5G connections between v005 GS and M2 v0.1
+
+![BOTTOM](/pic/Messy_Test.jpg)
 
 #### ULX5M-M2 V001
 
@@ -24,7 +33,7 @@ GateMate FPGA on M2 card
 - [x] SerDes with connection to ULX5M-GS - low speed 1.25Gbit/s SerDes transfer.
 - [] PCIe
 
-#### ULX5M-M2 V002 - ready for order
+#### ULX5M-M2 V002 - ordered
 
 - [] JTAG 
 - [] FLASH
